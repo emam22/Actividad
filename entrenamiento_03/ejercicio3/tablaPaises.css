@@ -18,11 +18,12 @@ body {
     flex-direction: column;
     min-height: 100%;
     margin: 0;
+    background-color: var(--secondary-dark);
 }
 
 .containertabla {
     background-color: var(--secondary-dark);
-    margin: 0 auto;
+    width: 100%;
     padding: 5rem 0;
     width: 100%;
 }

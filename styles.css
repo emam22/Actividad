@@ -5,6 +5,11 @@
     --secondary-dark: #d46a0a;
     --base-font-size: 16px;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html{
     font-size: var(--base-font-size);
@@ -33,11 +38,6 @@ html{
 }
 .button:hover{
     background-color: var(--secondary-dark);
-}
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
