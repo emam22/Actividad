@@ -1,5 +1,6 @@
 async function loadComponent(elementId, filePath) {
   const response = await fetch(filePath);
+  console.log(response);
   const html = await response.text();
   document.getElementById(elementId).innerHTML = html;
 }

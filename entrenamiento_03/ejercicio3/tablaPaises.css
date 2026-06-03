@@ -3,52 +3,92 @@
     --primary-dark: #0052a3;
     --secondary-color: #f47c20;
     --secondary-dark: #d46a0a;
-    --base-font-size: 16px;
 }
 
-.container {
+html {
+    font-size: var(--base-font-size);
+    font-family: "Vollkorn", serif;
+    background-color: #f0f0f0;
+    color: #333;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+
+.containertabla {
     background-color: var(--secondary-dark);
     margin: 0 auto;
-    padding: 1rem;
+    padding: 5rem 0;
+    width: 100%;
 }
 
 #grilla-paises {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
     padding: 1rem;
     text-align: center;
     font-size: 1.2rem;
 }
-@media (max-width: 612px) {
+
+@media (max-width: 920px) {
     #grilla-paises {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
     }
 }
+
+@media (max-width: 680px) {
+    #grilla-paises {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    #grilla-paises {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    #buscador {
+        max-width: 200px;
+        width: 40%;
+        margin: 0 3rem;
+        padding: 5rem 1rem;
+    }
+}
+
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  border: 3px solid var(--primary-dark);
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: white;
-  min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 3px solid var(--primary-dark);
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+    min-height: 10rem;
 }
 
 .card img {
-  width: 5rem;
-  height: 3rem;
-  object-fit: cover;   /* recorta sin deformar si la imagen no es exacta */
-  border: 1px solid black;
+    width: 6rem;
+    height: 4rem;
+    object-fit: cover;
+    /* recorta sin deformar si la imagen no es exacta */
+    border: 1px solid black;
 }
 
 .card p {
-  margin: 0;
-  font-size: 1.2rem;
-  text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 #popup {
@@ -72,24 +112,48 @@
     text-align: center;
     position: relative;
 }
+
 #popup-contenido h2 {
-  margin-top: 0;
-  color: var(--primary-dark);
-  font-size: 1.8rem;
+    margin-top: 0;
+    color: var(--primary-dark);
+    font-size: 1.8rem;
 }
+
 #popup-contenido ul {
-  font-size: 0.9rem;
-  color: #333;
-  list-style: none;
-  padding: 0;
+    font-size: 0.9rem;
+    color: #333;
+    list-style: none;
+    padding: 0;
 }
+
 #popup-contenido button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: var(--secondary-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.buscador-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#buscador {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid var(--primary-dark);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#buscador:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
 }

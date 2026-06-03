@@ -32,7 +32,6 @@ async function cargarPaises() {
     document.getElementById('popup-bandera').src = `https://flagcdn.com/w160/${pais.codigo}.png`;
     document.getElementById('popup-grupo').textContent = `Grupo ${pais.grupo}`;
 
-    // Genera la lista de compañeros de grupo
     const lista = pais.compañeros.map(c => `<li>${c}</li>`).join('');
     document.getElementById('popup-companeros').innerHTML = lista;
 
