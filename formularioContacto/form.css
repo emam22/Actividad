@@ -158,3 +158,32 @@ main {
         font-size: 1rem;
     }
 }
+.sectHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+    gap: 3rem;
+}
+.homeForm h2{
+    color: var(--primary-dark);
+}
+.homeForm{
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 5px solid var(--secondary-dark);
+    gap: 3rem;
+    text-align: center;
+}
+.homeForm ul{
+    list-style: none;
+}
+.homeForm li a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.homeForm ul li a:visited {
+    color:  var(--secondary-color);
+    text-decoration: none;
+}
