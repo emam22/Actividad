@@ -24,8 +24,8 @@ main {
 
 .section-formulario {
     width: 100%;
-    max-width: 60rem;
-    padding: 3rem;
+    max-width: 50rem;
+    padding: 1rem;
     background-color: #ffffff;
     border-radius: 2rem;
     box-shadow: 0 1.5rem 3.5rem rgba(2, 39, 141, 0.15);
@@ -45,7 +45,7 @@ main {
 }
 
 .input label {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
     font-weight: bold;
     color: var(--primary-dark);
 }
@@ -60,11 +60,11 @@ main {
 .input input,
 .input select {
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     border: 0.2rem solid #cbd5e1;
     border-radius: 0.8rem;
     background-color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 0.6rem;
     color: var(--primary-color);
     outline: none;
     transition: all 0.3s ease;
@@ -109,9 +109,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 0.8rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -147,14 +147,14 @@ main {
 
     .form-actions {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .input label {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 
     .checkbox label {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 }
