@@ -62,6 +62,7 @@ formContact.addEventListener("submit", function(e) {
     }
 
     alert("Muchas Gracias por su interes. Será Contactado a la brevedad.");
+    formContact.submit();
 });
 
 function limpiarErrores() {
