@@ -23,7 +23,7 @@ main {
     padding: 3rem 2rem;
 }
 
-.section-formulario {
+.formulario {
     width: 100%;
     max-width: 50rem;
     padding: 1rem;
@@ -159,7 +159,8 @@ main {
         font-size: 1rem;
     }
 }
-.sectHome{
+
+.sectHome {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,30 +168,44 @@ main {
     padding-top: 1rem;
     gap: 3rem;
 }
-.homeForm h2{
+
+.homeForm h2 {
     color: var(--primary-dark);
 }
-.homeForm{
+
+.homeForm {
     padding: 2rem;
     border-radius: 1rem;
     border: 5px solid var(--secondary-dark);
     gap: 3rem;
     text-align: center;
 }
-.homeForm ul{
+
+.homeForm ul {
     list-style: none;
 }
-.homeForm li a{
+
+.homeForm li a {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
 .homeForm ul li a:visited {
-    color:  var(--secondary-color);
+    color: var(--secondary-color);
     text-decoration: none;
 }
-.resultado-datos{
+
+.resultado-datos {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     font-size: 1rem;
+}
+
+.mensajeAlerta {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    min-height: 1rem;
 }

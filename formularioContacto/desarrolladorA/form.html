@@ -21,23 +21,27 @@
 
                 <div class="input">
                     <label for="nombre">Nombre completo: <span>(*)</span></label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Mínimo 5 caracteres" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Mínimo 5 caracteres">
+                <span class="mensajeAlerta" id="error-nombre"></span>
                 </div>
 
                 <div class="input">
                     <label for="email">E-mail: <span>(*)</span></label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com">
+                   <span class="mensajeAlerta" id="error-email"></span>
                 </div>
 
                 <div class="input">
                     <label for="edad">Edad: <span>(*)</span></label>
-                    <input type="number" id="edad" name="edad" placeholder="Entre 18 y 60 años" required>
+                    <input type="number" id="edad" name="edad" placeholder="Entre 18 y 60 años">
+                    <span class="mensajeAlerta" id="error-edad"></span>
+
                 </div>
 
                 <div class="input">
                     <label for="pais">País: <span>(*)</span></label>
-                    <select id="pais" name="pais" required>
-                        <option value=disabled selected>Selecciona tu país</option>
+                    <select id="pais" name="pais">
+                        <option value="" selected disabled>Selecciona tu país</option>
                         <option value="Alemania">Alemania</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Brasil">Brasil</option>
@@ -49,16 +53,19 @@
                         <option value="Portugal">Portugal</option>
                         <option value="Otros">Otros</option>
                     </select>
+                    <span class="mensajeAlerta" id="error-pais"></span>
+
                 </div>
 
                 <div class="checkbox">
-                    <input type="checkbox" id="terminos" name="terminos" value="aceptado" required>
+                    <input type="checkbox" id="terminos" name="terminos" value="aceptado">
                     <label for="terminos">Acepto los terminos y condiciones <span>(*)</span></label>
                 </div>
+                <span class="mensajeAlerta" id="error-terminos"></span>
 
                 <div class="form-actions">
                     <button type="submit" class="btn-in">Enviar Datos</button>
-                    <button type="reset" class="btn-clear">Limpiar</button>
+                    <button type="reset" id="btn-limpiar" class="btn-clear">Limpiar</button>
                 </div>
             </form>
         </section>
@@ -66,6 +73,6 @@
 
 </body>
 
-<script src="form.js"></script>
+<script src="../form.js"></script>
 
 </html>
